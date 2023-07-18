@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+body {
+  background-image: url(img/Backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+
+.cabecalho.scrolldown {
+  height: 70px;
+  transition: 0.5s ease-in-out;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.list-conteiner {
+  display: flex;
+  margin-right: 100px;
+  gap: 100px;
+}
+
+.list-items {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  position: relative;
+
+}
+
+.list-items::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: #1c67b7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.list-items:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.section_aventura {
+
+  display: flex;
+  height: calc(100vh - 100px);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section_aventura h1 {
+  margin-top: 70px;
+  font-size: 70px;
+  color: rgb(245, 245, 245);
+  font-family: 'Poppins', sans-serif;
+}
+
+.section_aventura span {
+  color: #ffffff9b;
+  transition: box-shadow 1s ease-in-out, color 1s ease-in-out;
+}
+
+.section_aventura span:hover {
+  color: #1c67b7;
+  transition: 1s;
+
+}
+
+.btn {
+  border: 2px solid #1c67b7;
+  border-radius: 0.6em;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 40px 40px #1c67b7 inset;
+}
+
+
+
+.cards-area {
+  padding: 15px 50px;
+}
+
+.cards-area .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+.cards-area .cards-container .cards {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.cards-area .cards-container .cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cards-area .cards-container .cards h3 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: 'Poppins', 'sans-serif';
+  bottom: 0;
+  right: 10%;
+  transition: 0.5s;
+}
+
+.cards h3::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #1c67b7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+}
+
+.cards h3:hover::after {
+  width: 0%;
+  transition: 1s;
+}
+
+.cards-area .cards-container .cards h3:hover {
+  color: rgba(255, 255, 255, 0.671);
+  transition: 0.5s;
+
+} 
+
+.rodape {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.new-sletter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} 
+
+.new-sletter input {
+   padding: 8px 40px;
+   border-radius: 5px;
+}
+
+.new-sletter-legend {
+  font-size: 20px;
+  color: white;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 500;
+}
+
+.new-sletter p {
+  font-weight: 300;
+  color: white;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.new-sletter .new-btn {
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #1c67b7;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+}
+
+.new-btn {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+}
+
+.new-btn:hover {
+  box-shadow: 0 0 40px 40px #1c67b7 inset;
+}
+
+.footer-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .list-conteiner {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+footer .list-items {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+footer span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-line {
+  color: #1c67b7;
+}
+
+footer img {
+  width: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 55px;
+    margin: 0;
+  }
+
+  .section_aventura {
+    text-align: center;
+  }
+
+
+  .section_aventura h1 {
+    font-size: 30px;
+  }
+
+  .list-conteiner {
+    margin-right: 20px;
+    gap: 20px;
+  }
+
+  .list-items {
+    font-size: 16px;
+  }
+
+  .footer-div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-span {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+}

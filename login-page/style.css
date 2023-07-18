@@ -1,0 +1,65 @@
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+ } 
+
+fieldset {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1c67b79d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 60px
+}
+
+h1 {
+    text-align: center;
+}
+
+ main {
+    background: linear-gradient(#1c67b7, #1c67b773);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ 
+ 
+  input {
+     padding: 5px 30px;
+     border-radius: 5px;
+  }
+  
+  legend {
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 500;
+  }
+  
+  label {
+    font-weight: 300;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+  }
+  
+  .register-btn {
+    background-color: transparent;
+    border: 2px solid #1c67b7;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+  }
+  
+  .register-btn {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+  }
+  
+  .register-btn:hover {
+    box-shadow: 0 0 40px 40px #1c67b7 inset;
+  }
